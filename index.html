@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakshitha Nalla | Portfolio</title>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 1rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+        .hero {
+            padding: 5rem 2rem;
+            text-align: center;
+            background: linear-gradient(to right, #007acc, #005fa3);
+            color: white;
+        }
+
+        .hero h1 {
+            margin: 0 0 1rem;
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #007acc;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #005fa3;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005fa3;
+        }
+
+        #contact a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><strong>Rakshitha Nalla</strong></div>
+        <nav><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    </header>
+    <section class="hero" data-aos="fade-up">
+        <h1>Hello,
+            I'm Rakshitha Nalla.</h1>
+        <p>Welcome to my personal website. I'm an aspiring Software Engineer passionate about building intelligent
+            and impactful applications.</p>
+    </section>
+    <section class="section" id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card" data-aos="zoom-in">
+                <h3>1. Weather App</h3>
+                <p>React-based weather application that fetches real-time weather data from an external API.
+                    Features include current weather,
+                    forecasting,
+                    and location-based results using React's state management.</p>
+                <a href="https://github.com/rakshithaaa9/weatherapp" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>2. Stock Market Tracker (AI/ML - Ongoing)</h3>
+                <p>Real-time stock tracker displaying live market data and predicting future trends using ML models
+                    like LSTM and Linear Regression based on time-series analysis.</p><a href="#" class="btn">Coming
+                    Soon</a>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rakshithaaa9@email.com">rakshithaaa9@email.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/nrakshitha" target="_blank">linkedin.com/in/nrakshitha</a></p>
+    </section>
+    <footer>&copy;
+
+        2025 Rakshitha Nalla | All Rights Reserved </footer>
+    < !-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        </script>
+</body>
+
+</html>
